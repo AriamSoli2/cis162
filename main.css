@@ -3,24 +3,30 @@
 /* Body Styles */
 
 body {
-    background-color: rgb(234, 222, 219);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
+    background-color: #F7E3D4;
     font-family: Arial-black, Helvetica, sans-serif;
-    font-size: 12pt;    
+    font-size: 12pt;  
+    line-height: 1.5;  
 }
 
 /* heading styles*/
 header {
-    background-color: rgb(201, 170, 162);
+    background-color: #FC7307;
 }
 
 h1 {
     text-align: center;
-    color: rgb(54, 85, 93);
+    color: #236AB9;
     font-size: 2.2em;
 }
 
 h2 {
-    color: rgb(54, 85, 93);
+    color: #236AB9;
     font-size: 1.5em;
     text-indent: 1%;
 }
@@ -41,17 +47,53 @@ nav > ul {
 
 nav > ul > li {
     display: inline;
-    padding-right: 1%;
+    padding-right: 2%;
+    
 }
 
+nav > ul > li > a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #236AB9;
+  }
+
 /*section styles */
+section#leftColumn {
+    clear: left;
+    float: left;
+    width: 55%;  
+}
+
+section#leftColumn h2 {
+    text-align: center;
+}
+
+section#rightColumn {
+    float: right;
+    width: 45%;
+}
+
 section > ul {
     font-style: italic;
 }
 
+section#hobbies {
+    text-align: center; 
+}
+/* paragraph styles */
+p {
+    clear: left;
+}
+
 /* footer styles */
 footer {
-    background-color: rgb(201, 170, 162);
+    clear: both;
+    background-color: #FC7307;
     text-align: center;
     padding: 10px;
 }
